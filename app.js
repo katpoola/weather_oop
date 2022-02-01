@@ -1,5 +1,9 @@
+// LS object - for location data
+const ls = new LS()
+// init location data
+const weatherLocation = ls.getLocationData()
 // Weather object
-const weather = new Weather('Tallinn')
+const weather = new Weather(weatherLocation)
 // UI object
 const ui = new UI()
 
